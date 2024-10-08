@@ -30,6 +30,7 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+
         .logo-container {
             position: absolute;
             top: 20px;
@@ -48,7 +49,10 @@
                 width: 60px;
             }
         }
-        h1, h2, h3 {
+
+        h1,
+        h2,
+        h3 {
             text-align: center;
             color: #2c3e50;
         }
@@ -75,7 +79,7 @@
             max-width: 100%;
             height: auto;
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
         }
 
@@ -157,11 +161,18 @@
         <img src="estacion3.jpg">
     </div>
 
-    <p><a href="https://www.google.com/maps/dir/?api=1&destination=-29.13296702,-67.56553838" class="cta-button">¿Como llegar a la Estacion
+    <p><a href="https://www.google.com/maps/dir/?api=1&destination=-29.13296702,-67.56553838" class="cta-button">¿Como
+            llegar a la Estacion
             2?</a></p>
     <br>
 
-    
+    <h2>Deja tu comentario</h2>
+
+    <form id="comentario-form" method="post" action="http://localhost:8080">
+        <textarea name="comentario" rows="4" cols="50" placeholder="Escribe tu comentario aquí..."></textarea>
+        <br>
+        <button type="submit" class="cta-button">Enviar Comentario</button>
+    </form>
 
 </body>
 
