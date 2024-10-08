@@ -11,7 +11,7 @@ collection_lugares = db['lugar']
 # Servidor HTTP
 class ComentarioHandler(BaseHTTPRequestHandler):
     def do_POST(self):
-        if self.path == '/':
+        if self.path == '/comentario':
             content_length = int(self.headers['Content-Length'])
             post_data = self.rfile.read(content_length).decode('utf-8')
             data = parse_qs(post_data)
